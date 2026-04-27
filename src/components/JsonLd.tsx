@@ -10,7 +10,7 @@ export function WebSiteSchema({ siteUrl, siteName }: WebSiteSchemaProps) {
     name: siteName,
     url: siteUrl,
     description:
-      'Free word unscrambler tool for Scrabble, Words With Friends, Wordle and more word games.',
+      'Free Word Unscramble Pro tool for Scrabble, Words With Friends, Wordle and more word games.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {

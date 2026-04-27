@@ -1,6 +1,6 @@
 # Word Lists
 
-This directory contains the word lists used by the Word Unscrambler engine.
+This directory contains the word lists used by the Word Unscramble Pro engine.
 
 ## Included Files
 

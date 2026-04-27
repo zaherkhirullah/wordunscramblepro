@@ -1,11 +1,11 @@
-import { createPageMetadata } from '@/lib/metadata'
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import GoogleAd from '@/components/ads/GoogleAd'
+import { createPageMetadata } from '@/lib/metadata'
 
 export const metadata = createPageMetadata({
-  title: 'Terms of Service – Word Unscrambler',
-  description: 'Terms of Service for Word Unscrambler. Read our terms before using our free word game tools.',
+  title: 'Terms of Service – Word Unscramble Pro',
+  description: 'Terms of Service for Word Unscramble Pro. Read our terms before using our free word game tools.',
   path: '/terms-of-service',
 })
 
@@ -24,7 +24,7 @@ export default function TermsOfServicePage() {
             <section>
               <h2 className="font-display font-bold text-navy text-xl mb-3">1. Introduction</h2>
               <p>
-                Word Unscrambler (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;) provides free
+                Word Unscramble Pro (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;) provides free
                 online word game tools at this website. By accessing or using our service, you agree to
                 these Terms of Service. If you disagree with any part of these terms, you may not use
                 our service.
@@ -73,8 +73,8 @@ export default function TermsOfServicePage() {
                 <li className="flex gap-2">
                   <span className="text-gold shrink-0 mt-0.5">•</span>
                   <span>
-                    The Word Unscrambler software, design, and original content are copyright &copy;
-                    2024&ndash;2026 Word Unscrambler. All rights reserved.
+                    The Word Unscramble Pro software, design, and original content are copyright &copy;
+                    2024&ndash;2026 Word Unscramble Pro. All rights reserved.
                   </span>
                 </li>
                 <li className="flex gap-2">
@@ -129,7 +129,7 @@ export default function TermsOfServicePage() {
                 5. Limitation of Liability
               </h2>
               <p>
-                To the maximum extent permitted by law, Word Unscrambler shall not be liable for any
+                To the maximum extent permitted by law, Word Unscramble Pro shall not be liable for any
                 indirect, incidental, special, or consequential damages arising from your use of, or
                 inability to use, the service. Our total liability shall not exceed the amount you paid
                 us in the past 12 months (which for a free service is $0).

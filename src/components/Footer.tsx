@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const footerLinks = {
   Tools: [
-    { href: '/', label: 'Word Unscrambler' },
+    { href: '/', label: 'Word Unscramble Pro' },
     { href: '/descrambler', label: 'Word Descrambler' },
     { href: '/word-scramble', label: 'Word Scramble' },
     { href: '/anagram-solver', label: 'Anagram Solver' },
@@ -48,7 +48,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-parchment/40 text-sm font-body leading-relaxed">
-              Fast, free word unscrambler for Scrabble, Words With Friends, Wordle, Wordfeud and more.
+              Fast, free Word Unscramble Pro for Scrabble, Words With Friends, Wordle, Wordfeud and more.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function Footer() {
 
         <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-parchment/30 text-xs font-body">
-            © {new Date().getFullYear()} WordUnscrambler. All rights reserved.
+            © {new Date().getFullYear()} WordUnscramblePro. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="text-parchment/30 hover:text-parchment/60 text-xs font-body transition-colors">Privacy Policy</Link>

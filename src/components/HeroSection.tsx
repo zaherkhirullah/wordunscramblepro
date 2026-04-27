@@ -49,7 +49,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-parchment/60 text-lg max-w-2xl mx-auto font-body leading-relaxed">
-          The fastest word unscrambler for Scrabble, Words With Friends, Wordle and more.
+          The fastest Word Unscramble Pro for Scrabble, Words With Friends, Wordle and more.
           Find all valid words from your letters in milliseconds.
         </p>
 

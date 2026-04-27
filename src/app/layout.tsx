@@ -53,7 +53,7 @@ export default function RootLayout({
         {children}
         <WebSiteSchema
           siteUrl={process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}
-          siteName={process.env.NEXT_PUBLIC_SITE_NAME || 'Word Unscrambler'}
+          siteName={process.env.NEXT_PUBLIC_SITE_NAME || 'Word Unscramble Pro'}
         />
 
         {/* Google Analytics */}

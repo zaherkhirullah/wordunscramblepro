@@ -1,13 +1,13 @@
-import { createPageMetadata } from '@/lib/metadata'
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import GoogleAd from '@/components/ads/GoogleAd'
+import { createPageMetadata } from '@/lib/metadata'
 import Link from 'next/link'
 
 export const metadata = createPageMetadata({
-  title: 'About Word Unscrambler',
+  title: 'About Word Unscramble Pro',
   description:
-    'Learn about Word Unscrambler — the fastest free word unscrambler and word game tool suite for Scrabble, Words With Friends, Wordle and more.',
+    'Learn about Word Unscramble Pro — the fastest free Word Unscramble Pro and word game tool suite for Scrabble, Words With Friends, Wordle and more.',
   path: '/about',
 })
 
@@ -15,7 +15,7 @@ const tools = [
   {
     emoji: '🔤',
     href: '/',
-    label: 'Word Unscrambler',
+    label: 'Word Unscramble Pro',
     desc: 'The core tool — find all valid words hidden in your letters instantly.',
   },
   {
@@ -84,7 +84,7 @@ export default function AboutPage() {
           {/* Hero card */}
           <div className="card bg-gradient-to-br from-navy to-navy/90 text-parchment p-8 mb-10">
             <h1 className="font-display font-bold text-parchment text-3xl sm:text-4xl mb-3">
-              Word Unscrambler
+              Word Unscramble Pro
             </h1>
             <p className="font-body text-parchment/80 text-lg mb-6">
               Free, fast, and ad-light word game tools for every puzzle player
@@ -112,7 +112,7 @@ export default function AboutPage() {
             <section>
               <h2 className="font-display text-xl font-bold text-navy mb-3">What is this site?</h2>
               <p>
-                Word Unscrambler is a free toolkit for word game players. Whether you&apos;re stuck on a
+                Word Unscramble Pro is a free toolkit for word game players. Whether you&apos;re stuck on a
                 Scrabble rack, need to solve today&apos;s Wordle, or just want to check if a word is
                 valid, we have a tool for it. Every tool works instantly in your browser — no account,
                 no download, no paywall.
@@ -248,7 +248,7 @@ export default function AboutPage() {
             <section>
               <h2 className="font-display text-xl font-bold text-navy mb-3">Disclaimer</h2>
               <p className="text-sm">
-                Word Unscrambler is not affiliated with, endorsed by, or associated with Scrabble®,
+                Word Unscramble Pro is not affiliated with, endorsed by, or associated with Scrabble®,
                 Words With Friends®, Wordle® (NYT), Wordfeud® or any other word game publisher.
                 All trademarks belong to their respective owners. Our tools are intended for
                 entertainment, learning and game strategy purposes only.

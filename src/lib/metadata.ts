@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
-const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Word Unscrambler'
+const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Word Unscramble Pro'
 const siteDescription =
   process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
-  'Simple, fast and powerful word unscrambler tool for Scrabble, Words With Friends, Wordle and more.'
+  'Simple, fast and powerful Word Unscramble Pro tool for Scrabble, Words With Friends, Wordle and more.'
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(siteUrl),

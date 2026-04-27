@@ -1,9 +1,9 @@
-import { createPageMetadata } from '@/lib/metadata'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import UnscrambleTool from '@/components/UnscrambleTool'
 import GoogleAd from '@/components/ads/GoogleAd'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import RelatedTools from '@/components/RelatedTools'
+import UnscrambleTool from '@/components/UnscrambleTool'
+import { createPageMetadata } from '@/lib/metadata'
 
 export const metadata = createPageMetadata({
   title: 'Word Descrambler - Unscramble Any Word',
@@ -43,7 +43,7 @@ export default function DescramblerPage({ searchParams }: { searchParams: { word
                 What is a word descrambler?
               </h2>
               <p className="text-navy/70 font-body leading-relaxed">
-                A word descrambler (also called a word unscrambler) takes a jumbled set of letters and
+                A word descrambler (also called a Word Unscramble Pro) takes a jumbled set of letters and
                 finds all valid English words that can be formed from those letters. It is an essential
                 tool for word game players who want to maximize their score in Scrabble, Words With Friends,
                 Wordfeud or any other tile-based game.

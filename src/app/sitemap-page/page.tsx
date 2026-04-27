@@ -1,11 +1,11 @@
-import { createPageMetadata } from '@/lib/metadata'
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import { createPageMetadata } from '@/lib/metadata'
 import Link from 'next/link'
 
 export const metadata = createPageMetadata({
-  title: 'Sitemap - All Pages on Word Unscrambler',
-  description: 'Browse all tools, pages and resources available on Word Unscrambler.',
+  title: 'Sitemap - All Pages on Word Unscramble Pro',
+  description: 'Browse all tools, pages and resources available on Word Unscramble Pro.',
   path: '/sitemap',
 })
 
@@ -13,7 +13,7 @@ const sitemapSections = [
   {
     title: 'Word Game Tools',
     links: [
-      { href: '/', label: 'Word Unscrambler', desc: 'Unscramble any set of letters into valid words' },
+      { href: '/', label: 'Word Unscramble Pro', desc: 'Unscramble any set of letters into valid words' },
       { href: '/descrambler', label: 'Word Descrambler', desc: 'Descramble letters with advanced filters' },
       { href: '/anagram-solver', label: 'Anagram Solver', desc: 'Find exact and partial anagrams' },
       { href: '/word-scramble', label: 'Word Scramble Solver', desc: 'Solve word scramble and jumble puzzles' },
@@ -47,7 +47,7 @@ const sitemapSections = [
   {
     title: 'Information',
     links: [
-      { href: '/about', label: 'About', desc: 'About Word Unscrambler' },
+      { href: '/about', label: 'About', desc: 'About Word Unscramble Pro' },
       { href: '/contact', label: 'Contact', desc: 'Get in touch' },
       { href: '/privacy-policy', label: 'Privacy Policy', desc: 'How we handle your data' },
     ],
@@ -62,7 +62,7 @@ export default function SitemapPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
           <h1 className="font-display font-bold text-navy mb-2">Sitemap</h1>
           <p className="text-navy/60 font-body mb-10">
-            All tools, pages and resources on Word Unscrambler.
+            All tools, pages and resources on Word Unscramble Pro.
           </p>
 
           <div className="space-y-10">

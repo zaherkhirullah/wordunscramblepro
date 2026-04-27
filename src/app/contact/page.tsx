@@ -1,10 +1,10 @@
-import { createPageMetadata } from '@/lib/metadata'
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import { createPageMetadata } from '@/lib/metadata'
 
 export const metadata = createPageMetadata({
   title: 'Contact Us',
-  description: 'Get in touch with the Word Unscrambler team.',
+  description: 'Get in touch with the Word Unscramble Pro team.',
   path: '/contact',
 })
 

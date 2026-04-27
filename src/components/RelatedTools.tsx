@@ -6,7 +6,7 @@ interface RelatedToolsProps {
 }
 
 const ALL_TOOLS = [
-  { href: '/', label: 'Word Unscrambler', description: 'Unscramble any letters into valid words', emoji: '🔤' },
+  { href: '/', label: 'Word Unscramble Pro', description: 'Unscramble any letters into valid words', emoji: '🔤' },
   { href: '/descrambler', label: 'Word Descrambler', description: 'Descramble tiles for Scrabble & WWF', emoji: '🎯' },
   { href: '/word-scramble', label: 'Word Scramble Solver', description: 'Solve any word jumble puzzle', emoji: '🧩' },
   { href: '/anagram-solver', label: 'Anagram Solver', description: 'Find every anagram from your letters', emoji: '↔️' },

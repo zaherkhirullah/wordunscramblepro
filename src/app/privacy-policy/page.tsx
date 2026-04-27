@@ -1,11 +1,11 @@
-import { createPageMetadata } from '@/lib/metadata'
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import { createPageMetadata } from '@/lib/metadata'
 import Link from 'next/link'
 
 export const metadata = createPageMetadata({
   title: 'Privacy Policy',
-  description: 'Privacy policy for Word Unscrambler — how we collect, use and protect your data.',
+  description: 'Privacy policy for Word Unscramble Pro — how we collect, use and protect your data.',
   path: '/privacy-policy',
 })
 
@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="font-display font-bold text-navy text-xl mb-3">1. Introduction</h2>
               <p>
-                Word Unscrambler (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;) operates this
+                Word Unscramble Pro (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;) operates this
                 website as a free word game tool. This privacy policy explains what data we collect when
                 you use our site and how we use it.
               </p>

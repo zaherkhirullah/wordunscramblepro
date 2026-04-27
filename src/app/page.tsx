@@ -1,21 +1,21 @@
-import Navbar from '@/components/Navbar'
+import GoogleAd from '@/components/ads/GoogleAd'
+import FeatureCards from '@/components/FeatureCards'
 import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
-import FeatureCards from '@/components/FeatureCards'
 import HowItWorks from '@/components/HowItWorks'
-import UnscrambleTool from '@/components/UnscrambleTool'
-import GoogleAd from '@/components/ads/GoogleAd'
-import RelatedTools from '@/components/RelatedTools'
-import { createPageMetadata } from '@/lib/metadata'
 import { SoftwareAppSchema } from '@/components/JsonLd'
+import Navbar from '@/components/Navbar'
+import RelatedTools from '@/components/RelatedTools'
+import UnscrambleTool from '@/components/UnscrambleTool'
+import { createPageMetadata } from '@/lib/metadata'
 
 export const metadata = createPageMetadata({
-  title: 'Word Unscrambler - Unscramble Letters To Find Words',
+  title: 'Word Unscramble Pro - Unscramble Letters To Find Words',
   description:
-    'Free word unscrambler tool. Enter scrambled letters to find all valid words for Scrabble, Words With Friends, Wordle, Wordscapes and more. Supports 173,000+ words.',
+    'Free Word Unscramble Pro tool. Enter scrambled letters to find all valid words for Scrabble, Words With Friends, Wordle, Wordscapes and more. Supports 173,000+ words.',
   path: '/',
   keywords: [
-    'word unscrambler',
+    'Word Unscramble Pro',
     'unscramble letters',
     'scrabble word finder',
     'words with friends',
@@ -43,7 +43,7 @@ export default function HomePage({ searchParams }: { searchParams: { word?: stri
           <div className="space-y-10">
             <div>
               <h2 className="font-display text-2xl font-bold text-navy mb-3">
-                What is the use of Word Unscrambler?
+                What is the use of Word Unscramble Pro?
               </h2>
               <p className="text-navy/70 font-body leading-relaxed">
                 When you are stuck with some random letters and want to make words out of those scrambled letters,
@@ -100,7 +100,7 @@ export default function HomePage({ searchParams }: { searchParams: { word?: stri
                 Supported word games
               </h2>
               <p className="text-navy/70 font-body leading-relaxed">
-                Our word unscrambler works for all major word games. Whether you play{' '}
+                Our Word Unscramble Pro works for all major word games. Whether you play{' '}
                 <strong className="text-navy">Scrabble</strong> at home or in tournaments, compete at{' '}
                 <strong className="text-navy">Words With Friends</strong>, guess the daily{' '}
                 <strong className="text-navy">Wordle</strong>, solve a{' '}
@@ -127,8 +127,8 @@ export default function HomePage({ searchParams }: { searchParams: { word?: stri
       </main>
       <Footer />
       <SoftwareAppSchema
-        name="Word Unscrambler"
-        description="Free word unscrambler tool. Enter scrambled letters to find all valid words for Scrabble, Words With Friends, Wordle and more."
+        name="Word Unscramble Pro"
+        description="Free Word Unscramble Pro tool. Enter scrambled letters to find all valid words for Scrabble, Words With Friends, Wordle and more."
         url={process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}
       />
     </>
