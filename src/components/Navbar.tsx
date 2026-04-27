@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
+import { useState } from 'react'
 
 const navLinks = [
   { href: '/check-dictionary', label: 'Check Dictionary' },
@@ -26,7 +26,7 @@ export default function Navbar() {
             W
           </span>
           <span className="font-display font-bold text-parchment text-lg">
-            Word<span className="text-gold">Unscrambler</span>
+            Word<span className="text-gold">UnscramblePro</span>
           </span>
         </Link>
 

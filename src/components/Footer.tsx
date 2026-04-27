@@ -44,7 +44,7 @@ export default function Footer() {
                 W
               </span>
               <span className="font-display font-bold text-parchment text-lg">
-                Word<span className="text-gold">Unscrambler</span>
+                Word<span className="text-gold">UnscramblePro</span>
               </span>
             </Link>
             <p className="text-parchment/40 text-sm font-body leading-relaxed">
