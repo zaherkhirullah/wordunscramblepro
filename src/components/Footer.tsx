@@ -22,6 +22,11 @@ const footerLinks = {
     { href: '/word-lists/4-letter', label: '4 Letter Words' },
     { href: '/word-lists/5-letter', label: '5 Letter Words' },
     { href: '/word-lists/q-without-u', label: 'Q Without U Words' },
+    { href: '/categories', label: 'Word Categories' },
+    { href: '/words', label: 'Browse by Letter' },
+    { href: '/words/containing/a', label: 'Words with A' },
+    { href: '/words/starting-with/s', label: 'Words Starting S' },
+    { href: '/word-lists/7', label: '7 Letter Words' },
   ],
   Info: [
     { href: '/about', label: 'About' },

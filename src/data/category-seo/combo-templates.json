@@ -1,0 +1,36 @@
+{
+  "introTemplates": [
+    "Looking to unscramble {LETTERS}? Here are all {WORD_COUNT} valid English words you can make from these {COUNT} letters, ranging from {MIN_LEN} to {MAX_LEN} letters long.",
+    "Got {LETTERS} letters and need words? We found {WORD_COUNT} valid English words you can build from them — the full list is organized by length below.",
+    "The letters {LETTERS} can form {WORD_COUNT} different words, from {MIN_LEN}-letter to {MAX_LEN}-letter. Find every valid Scrabble and Words With Friends play below.",
+    "Need to unscramble {LETTERS}? This page shows all {WORD_COUNT} playable words from these {COUNT} letters, sorted by length for easy reference.",
+    "The letter combination {LETTERS} yields {WORD_COUNT} valid Scrabble and Wordle words. Browse them below, grouped by word length.",
+    "Unscrambling {LETTERS} reveals {WORD_COUNT} valid English words. Whether you play {TOP_WORD} for {TOP_POINTS} points or need shorter plays, find the complete list below.",
+    "You can make {WORD_COUNT} different words from the letters {LETTERS}, from {MIN_LEN} letters to {MAX_LEN} letters. All verified words are listed here.",
+    "Got {COUNT} letters? The set {LETTERS} produces exactly {WORD_COUNT} valid words. Use the full list below to find your best play for Scrabble, Wordle, or Words With Friends.",
+    "{WORD_COUNT} words can be made from {LETTERS} — from quick {MIN_LEN}-letter plays to {MAX_LEN}-letter bingos. The complete unscrambled list is below.",
+    "These tiles ({LETTERS}) create {WORD_COUNT} valid Scrabble and Wordle words. Search through them below to find your highest-scoring play."
+  ],
+  "aboutTemplates": [
+    "When you unscramble {LETTERS}, you have {WORD_COUNT} words ranging from {MIN_LEN} to {MAX_LEN} letters. The highest-scoring play is {TOP_WORD}, worth {TOP_POINTS} Scrabble points. Short plays like {SAMPLE_SHORT} are ideal for tight board positions, while longer words like {SAMPLE_LONG} can clear your rack for a full reload.",
+    "The {COUNT}-letter set {LETTERS} yields {WORD_COUNT} words. The top scorer is {TOP_WORD} at {TOP_POINTS} points. Common short plays like {SAMPLE_SHORT} help maintain board control, while {SAMPLE_LONG} often enables follow-up bingos by emptying your rack completely.",
+    "Holding tiles {LETTERS} gives you a versatile combination of vowels and consonants. In competitive play, {SAMPLE_LONG} at {TOP_POINTS} is your best single play, while {SAMPLE_SHORT} offers quick-release options in tight corners. The {WORD_COUNT} words available from {LETTERS} make this tile set valuable in any word game.",
+    "The combination {LETTERS} is a balanced set with strong scoring potential. {TOP_WORD} ({TOP_POINTS} pts) is the prize play, but also look for {SAMPLE_SHORT} as a flexible fallback. With {WORD_COUNT} words total, {LETTERS} rewards careful study and strategic positioning near premium squares.",
+    "Studying tile combinations like {LETTERS} is essential for competitive Scrabble. The {WORD_COUNT} possible plays include {SAMPLE_SHORT}, {SAMPLE_LONG}, and the bonus-driving {TOP_WORD}. Knowing your full options transforms average players into strategic threats.",
+    "These {COUNT} letters ({LETTERS}) generate {WORD_COUNT} valid words in competitive English dictionaries. In Scrabble, prioritizing {TOP_WORD} at {TOP_POINTS} points and similar bingos is essential, but {SAMPLE_SHORT} keeps board positions flexible. Understanding the full range maximizes your scoring potential.",
+    "In Scrabble, holding the letters {LETTERS} gives you access to {WORD_COUNT} different plays worth from {MIN_LEN} to {MAX_LEN} letters. {TOP_WORD} (worth {TOP_POINTS} points) is the prize tile — save it for a triple-word square. Meanwhile, {SAMPLE_SHORT} provides reliable utility plays throughout the game.",
+    "The {LETTERS} combo is particularly valuable for its balance of short and long plays. With {WORD_COUNT} total options, you have {SAMPLE_SHORT} for quick releases and {SAMPLE_LONG} as your highest-scoring play. Both {SAMPLE_SHORT} and {SAMPLE_LONG} are valuable additions to any competitive player's vocabulary."
+  ],
+  "tipsTemplates": [
+    "Start by identifying the shortest valid words from {LETTERS} — 2 and 3-letter words like {SAMPLE_SHORT} give you the most flexible placement options on tight boards.",
+    "The highest-scoring single play from {LETTERS} is {TOP_WORD} worth {TOP_POINTS} points — save this play for a triple-word score square to maximize your points.",
+    "In Wordle, prioritizing letters like {SAMPLE_SHORT} early helps eliminate common vowels and consonants efficiently. {SAMPLE_SHORT} is one of the most information-dense guesses available.",
+    "Look for common suffixes within {LETTERS} — patterns like -ED, -ER, -ING, and -S within {SAMPLE_SHORT} and {SAMPLE_LONG} reveal hidden words.",
+    "When stuck with {LETTERS}, try alternating vowel-consonant patterns: vowel + consonant + vowel often reveals discoverable words. The {WORD_COUNT} plays here confirm {LETTERS} is a productive combination.",
+    "In competitive play, prioritize both short and long options: {SAMPLE_SHORT} offers board flexibility while {SAMPLE_LONG} at {TOP_POINTS} points can swing endgames. Keep both in mind.",
+    "Study the {WORD_COUNT} words from {LETTERS} and memorize at least 5: your top scorer ({TOP_WORD}), 2 short utility words (like {SAMPLE_SHORT}), and 1 mid-length play. This maximizes your Scrabble vocabulary efficiently.",
+    "The key to competitive {LETTERS} play is knowing when to use short vs. long forms. {SAMPLE_SHORT} is for board preservation; {SAMPLE_LONG} at {TOP_POINTS} is for score maximization. Use each strategically.",
+    "In Wordle, these {WORD_COUNT} valid words demonstrate all possible solutions from the {COUNT} letters in {LETTERS}. Study which letters appear most frequently for elimination strategy.",
+    "For Scrabble endgames holding {LETTERS}, prioritize {SAMPLE_LONG} to clear your rack on the final turn. The bonus from emptying your tiles often decides close games."
+  ]
+}

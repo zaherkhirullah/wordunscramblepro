@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import combosData from '@/data/letter-combos.json'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
@@ -152,5 +153,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
+
+    // ── Hub pages ─────────────────────────────────────────────────────────────
+    { url: `${siteUrl}/categories`, lastModified: staticDate, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${siteUrl}/words`, lastModified: staticDate, changeFrequency: 'monthly' as const, priority: 0.7 },
+
+    // ── Words containing letter (a-z) ─────────────────────────────────────────
+    ...'abcdefghijklmnopqrstuvwxyz'.split('').map(l => ({
+      url: `${siteUrl}/words/containing/${l}`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+
+    // ── Words starting with letter (a-z) ──────────────────────────────────────
+    ...'abcdefghijklmnopqrstuvwxyz'.split('').map(l => ({
+      url: `${siteUrl}/words/starting-with/${l}`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+
+    // ── Words ending with letter (a-z) ────────────────────────────────────────
+    ...'abcdefghijklmnopqrstuvwxyz'.split('').map(l => ({
+      url: `${siteUrl}/words/ending-with/${l}`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+
+    // ── Dynamic word lists for specific lengths ────────────────────────────────
+    ...[2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(n => ({
+      url: `${siteUrl}/word-lists/${n}`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+
+    // ── Combo unscramble pages ────────────────────────────────────────────────
+    ...combosData.combos.map(c => ({
+      url: `${siteUrl}/unscramble/${c}`,
+      lastModified: staticDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    })),
   ]
 }
