@@ -7,12 +7,7 @@ import GoogleAd from '@/components/ads/GoogleAd'
 import RelatedTools from '@/components/RelatedTools'
 import Link from 'next/link'
 
-export const dynamic = 'force-static'
-
-export async function generateStaticParams() {
-  const combos = getAllLetterCombos()
-  return combos.map((letters) => ({ letters }))
-}
+export const dynamic = 'force-dynamic'
 
 export async function generateMetadata({ params }: { params: { letters: string } }) {
   const seo = getComboCategorySEO(params.letters)

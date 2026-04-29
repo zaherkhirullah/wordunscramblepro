@@ -3,6 +3,8 @@
 import { sanitizeLetters } from '@/lib/utils'
 import type { DictionaryType } from '@/lib/word-engine/loader'
 import type { UnscrambleResult } from '@/lib/word-engine/unscramble'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useState, useTransition } from 'react'
 
 interface FormState {
@@ -22,6 +24,7 @@ interface UnscrambleFormProps {
 }
 
 export default function UnscrambleForm({ onResults, defaultLetters = '', autoSubmit, buttonLabel }: UnscrambleFormProps) {
+  const router = useRouter()
   const [state, setState] = useState<FormState>({
     letters: defaultLetters,
     dictionary: 'enable',
@@ -85,9 +88,52 @@ export default function UnscrambleForm({ onResults, defaultLetters = '', autoSub
   const handleSubmit = useCallback(
     async (e: React.FormEvent) => {
       e.preventDefault()
-      performSearch(state.letters)
+      
+      if (!state.letters || state.letters.length < 2) {
+        setError('Please enter at least 2 letters.')
+        return
+      }
+      setError(null)
+
+      startTransition(async () => {
+        try {
+          const response = await fetch('/api/unscramble', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              letters: state.letters,
+              dictionary: state.dictionary,
+              mustInclude: state.mustInclude || undefined,
+              startsWith: state.startsWith || undefined,
+              endsWith: state.endsWith || undefined,
+            }),
+          })
+
+          if (!response.ok) {
+            const data = await response.json()
+            setError(data.error || 'Something went wrong.')
+            setResults(null)
+            onResults?.(null)
+            return
+          }
+
+          const data: UnscrambleResult = await response.json()
+          setResults(data)
+          onResults?.(data)
+
+          // DISABLED: Auto-redirect breaks inline UX - users can manually navigate to SEO page if needed
+          // if (data.totalCount > 0) {
+          //   const sortedLetters = state.letters.toLowerCase().split('').sort().join('')
+          //   router.push(`/unscramble/${sortedLetters}`)
+          // }
+        } catch {
+          setError('Network error. Please try again.')
+          setResults(null)
+          onResults?.(null)
+        }
+      })
     },
-    [state.letters, performSearch]
+    [state, onResults, router]
   )
 
   useEffect(() => {
@@ -238,6 +284,21 @@ export default function UnscrambleForm({ onResults, defaultLetters = '', autoSub
           </div>
         )}
       </form>
+
+      {/* SEO page link */}
+      {results && state.letters && (
+        <div className="px-6 py-4 border-t border-parchment-dark bg-parchment/30">
+          <Link
+            href={`/unscramble/${state.letters.toLowerCase().split('').join('')}`}
+            className="inline-flex items-center gap-2 text-sm text-gold hover:text-gold-dark transition-colors"
+          >
+            <span>View dedicated page</span>
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </Link>
+        </div>
+      )}
     </div>
   )
 }
