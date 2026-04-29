@@ -96,7 +96,7 @@ export default function Navbar() {
               About
             </Link>
             <Link
-              href="/sitemap-page"
+              href="/sitemap"
               onClick={() => setMenuOpen(false)}
               className="px-3 py-2.5 rounded-lg text-sm font-medium text-parchment/50 hover:text-parchment hover:bg-white/5 transition-all block"
             >

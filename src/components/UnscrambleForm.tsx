@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useCallback, useTransition, useEffect } from 'react'
 import { sanitizeLetters } from '@/lib/utils'
-import type { UnscrambleResult } from '@/lib/word-engine/unscramble'
 import type { DictionaryType } from '@/lib/word-engine/loader'
+import type { UnscrambleResult } from '@/lib/word-engine/unscramble'
+import { useCallback, useEffect, useState, useTransition } from 'react'
 
 interface FormState {
   letters: string
@@ -28,7 +28,7 @@ export default function UnscrambleForm({ onResults, defaultLetters = '', autoSub
     mustInclude: '',
     startsWith: '',
     endsWith: '',
-    showAdvanced: false,
+    showAdvanced: true,
   })
   const [results, setResults] = useState<UnscrambleResult | null>(null)
   const [error, setError] = useState<string | null>(null)
