@@ -1,0 +1,80 @@
+{
+  "sections": [
+    {
+      "title": "Home & Main Tools",
+      "links": [
+        { "href": "/", "label": "Word Unscramble Pro", "desc": "Free tool to unscramble any letters into valid words" }
+      ]
+    },
+    {
+      "title": "Word Game Tools",
+      "links": [
+        { "href": "/descrambler", "label": "Word Descrambler", "desc": "Advanced descrambler with filters" },
+        { "href": "/anagram-solver", "label": "Anagram Solver", "desc": "Find anagrams and partial anagrams" },
+        { "href": "/word-scramble", "label": "Word Scramble Solver", "desc": "Solve word jumble puzzles" },
+        { "href": "/scrabble-word-finder", "label": "Scrabble Word Finder", "desc": "Find best Scrabble words" },
+        { "href": "/words-with-friends", "label": "Words With Friends", "desc": " WWF word helper" },
+        { "href": "/wordfeud-helper", "label": "Wordfeud Helper", "desc": "Wordfeud dictionary tool" }
+      ]
+    },
+    {
+      "title": "Puzzle Solvers",
+      "links": [
+        { "href": "/wordle-solver", "label": "Wordle Solver", "desc": "Wordle solving assistant" },
+        { "href": "/quordle-solver", "label": "Quordle Solver", "desc": "Multi-board Wordle solver" }
+      ]
+    },
+    {
+      "title": "Dictionary & Verification",
+      "links": [
+        { "href": "/check-dictionary", "label": "Check Dictionary", "desc": "Verify words in NWL, CSW, ENABLE" },
+        { "href": "/word-checker", "label": "Word Checker", "desc": "Quick word validity check" },
+        { "href": "/random-word-generator", "label": "Random Word Generator", "desc": "Generate random valid words" }
+      ]
+    },
+    {
+      "title": "Word Lists by Length",
+      "links": [
+        { "href": "/two-letter-words", "label": "2-Letter Words", "desc": "All valid 2-letter Scrabble words (107 words)" },
+        { "href": "/word-lists/3-letter", "label": "3-Letter Words", "desc": "All valid 3-letter words" },
+        { "href": "/word-lists/4-letter", "label": "4-Letter Words", "desc": "All valid 4-letter words" },
+        { "href": "/word-lists/5-letter", "label": "5-Letter Words", "desc": "All valid 5-letter words (Wordle)" },
+        { "href": "/word-lists/q-without-u", "label": "Q Without U Words", "desc": "Words with Q but no U" },
+        { "href": "/word-lists/high-value", "label": "High Value Words", "desc": "Words with Z, Q, X, J for max points" },
+        { "href": "/word-lists", "label": "All Word Lists", "desc": "Browse all word lists" }
+      ]
+    },
+    {
+      "title": "Word Categories Hub",
+      "links": [
+        { "href": "/categories", "label": "Word Categories", "desc": "Browse all word categories" },
+        { "href": "/words", "label": "Browse Words by Letter", "desc": "Find words by letter pattern" }
+      ]
+    },
+    {
+      "title": "Words Containing Letter",
+      "links": []
+    },
+    {
+      "title": "Words Starting With",
+      "links": []
+    },
+    {
+      "title": "Words Ending With",
+      "links": []
+    },
+    {
+      "title": "Popular Unscramble Pages",
+      "links": []
+    },
+    {
+      "title": "Information",
+      "links": [
+        { "href": "/about", "label": "About", "desc": "About Word Unscramble Pro" },
+        { "href": "/contact", "label": "Contact", "desc": "Contact us" },
+        { "href": "/privacy-policy", "label": "Privacy Policy", "desc": "Privacy policy" },
+        { "href": "/terms-of-service", "label": "Terms of Service", "desc": "Terms of service" }
+      ]
+    }
+  ]
+}

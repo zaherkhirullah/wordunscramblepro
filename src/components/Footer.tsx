@@ -23,8 +23,9 @@ const footerLinks = {
     { href: '/word-lists/5-letter', label: '5 Letter Words' },
     { href: '/word-lists/q-without-u', label: 'Q Without U Words' },
     { href: '/categories', label: 'Word Categories' },
-    { href: '/words', label: 'Browse by Letter' },
+    { href: '/words', label: 'Browse Words by Letter' },
     { href: '/words/containing/a', label: 'Words with A' },
+    { href: '/unscramble/aer', label: 'Unscramble Examples' },
     { href: '/words/starting-with/s', label: 'Words Starting S' },
     { href: '/word-lists/7', label: '7 Letter Words' },
   ],
@@ -33,7 +34,7 @@ const footerLinks = {
     { href: '/contact', label: 'Contact' },
     { href: '/privacy-policy', label: 'Privacy Policy' },
     { href: '/terms-of-service', label: 'Terms of Service' },
-    { href: '/sitemap-page', label: 'Sitemap' },
+    { href: '/sitemap', label: 'Sitemap' },
   ],
 }
 
