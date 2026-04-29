@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
-import type { UnscrambleResult, WordResult } from '@/lib/word-engine/unscramble'
 import { formatWordCount } from '@/lib/utils'
+import type { UnscrambleResult, WordResult } from '@/lib/word-engine/unscramble'
+import { useState } from 'react'
 
 interface ResultsPanelProps {
   results?: UnscrambleResult | null
@@ -27,7 +27,7 @@ export default function ResultsPanel({ results }: ResultsPanelProps) {
     try {
       const res = await fetch(`/api/check-dictionary?word=${encodeURIComponent(word)}`)
       const data = await res.json()
-      setCheckedWords((prev) => ({ ...prev, [word]: data.isValid ?? false }))
+      setCheckedWords((prev) => ({ ...prev, [word]: data.inAnyDictionary ?? false }))
     } catch {
       setCheckedWords((prev) => ({ ...prev, [word]: false }))
     }
